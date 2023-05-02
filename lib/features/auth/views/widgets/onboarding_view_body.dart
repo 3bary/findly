@@ -18,7 +18,7 @@ class OnboardingViewBody extends StatelessWidget {
             child: Row(
               children:  const [
                 Text(
-                  'Spedah',
+                  'Findly',
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600,color: Colors.white),
                 ),
                 SizedBox(width:4),

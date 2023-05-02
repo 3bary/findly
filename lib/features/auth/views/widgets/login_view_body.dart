@@ -2,11 +2,8 @@
 import 'package:findly/features/auth/views/widgets/arrow_back_button.dart';
 import 'package:findly/features/auth/views/widgets/login_form.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
 import '../../../../constants.dart';
-import '../../../../core/utils/assets.dart';
-import '../../../../core/widgets/custom_button_icon.dart';
+
 
 class LoginViewBody extends StatelessWidget {
   const LoginViewBody({Key? key}) : super(key: key);
@@ -39,27 +36,7 @@ class LoginViewBody extends StatelessWidget {
             ),
             const SizedBox(height: 36),
             const LoginForm(),
-            const SizedBox(height: 16),
-            const CustomButtonIcon(
-              text: 'Log in using Apple',
-              backgroundColor: Colors.black,
-              textColor: Colors.white,
-              onPressed: null,
-              icon: Icon(
-                FontAwesomeIcons.apple,
-                size: 28,
-                color: Colors.white,
-              ),
-            ),
-            const SizedBox(height: 16),
-            const CustomButtonIcon(
-              text: 'Log in using Google',
-              backgroundColor: Color(0xffF0F5F2),
-              textColor: kPrimaryColor,
-              onPressed: null,
-              icon: Image(image: AssetImage(kGoogleLogo)),
-            ),
-            const SizedBox(height: 145),
+            const SizedBox(height: 36),
             Center(
                 child: RichText(
               text: const TextSpan(
@@ -80,7 +57,7 @@ class LoginViewBody extends StatelessWidget {
             ),
             ),
             const SizedBox(
-              height: 24,
+              height: 56,
             )
           ],
         ),

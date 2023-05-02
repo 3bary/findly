@@ -1,10 +1,7 @@
 
 import 'package:findly/features/auth/views/widgets/signup_form.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import '../../../../constants.dart';
-import '../../../../core/utils/assets.dart';
-import '../../../../core/widgets/custom_button_icon.dart';
 import 'arrow_back_button.dart';
 
 class SignupViewBody extends StatelessWidget {
@@ -38,27 +35,7 @@ class SignupViewBody extends StatelessWidget {
             ),
             const SizedBox(height: 36),
             const SignupForm(),
-            const SizedBox(height: 16),
-            const CustomButtonIcon(
-              text: 'Sign up using Apple',
-              backgroundColor: Colors.black,
-              textColor: Colors.white,
-              onPressed: null,
-              icon: Icon(
-                FontAwesomeIcons.apple,
-                size: 28,
-                color: Colors.white,
-              ),
-            ),
-            const SizedBox(height: 16),
-            const CustomButtonIcon(
-              text: 'Sign up using Google',
-              backgroundColor: Color(0xffF0F5F2),
-              textColor: kPrimaryColor,
-              onPressed: null,
-              icon: Image(image: AssetImage(kGoogleLogo)),
-            ),
-            const SizedBox(height: 28),
+            const SizedBox(height: 36),
             Center(
               child: RichText(
                 text: const TextSpan(
@@ -79,7 +56,7 @@ class SignupViewBody extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 24,
+              height: 56,
             )
           ],
         ),

@@ -20,7 +20,7 @@ class ImageShape extends StatelessWidget {
               height:320,
               decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Color(0xffA8C0A7)
+                  color: Color(0xffd1bce3)
               ),
             ),
           ),
@@ -28,6 +28,7 @@ class ImageShape extends StatelessWidget {
               top: -10,
               left: 70,
               child: Image(
+                width: 350,
                 image: AssetImage(kBikeImage),
               )
           ),
