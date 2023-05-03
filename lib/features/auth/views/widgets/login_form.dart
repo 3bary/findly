@@ -30,7 +30,7 @@ class _LoginFormState extends State<LoginForm> {
               return null;
             },
             icon: FontAwesomeIcons.user,
-            hintText: 'Email or username',
+            hintText: 'Email',
             obscureText: false,
           ),
           const SizedBox(height: 24),

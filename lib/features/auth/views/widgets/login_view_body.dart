@@ -1,7 +1,9 @@
 
+import 'package:findly/core/utils/app_router.dart';
 import 'package:findly/features/auth/views/widgets/arrow_back_button.dart';
 import 'package:findly/features/auth/views/widgets/login_form.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../../../../constants.dart';
 
 
@@ -38,23 +40,28 @@ class LoginViewBody extends StatelessWidget {
             const LoginForm(),
             const SizedBox(height: 36),
             Center(
-                child: RichText(
+                child: GestureDetector(
+                  onTap: (){
+                    GoRouter.of(context).pushReplacement(AppRouter.kSignupView);
+                  },
+                  child: RichText(
               text: const TextSpan(
-                style: TextStyle(fontSize: 14, color: kPrimaryColor),
-                children: [
-                  TextSpan(
-                    text: 'Don’t have account? ',
-                  ),
-                  TextSpan(
-                    text: 'Sign up',
-                    style: TextStyle(
-                        decoration: TextDecoration.underline,
-                      decorationColor: kSecondaryColor,
+                  style: TextStyle(fontSize: 14, color: kPrimaryColor),
+                  children: [
+                    TextSpan(
+                      text: 'Don’t have account? ',
                     ),
-                  ),
-                ],
+                    TextSpan(
+                      text: 'Sign up',
+                      style: TextStyle(
+                          decoration: TextDecoration.underline,
+                        decorationColor: kSecondaryColor,
+                      ),
+                    ),
+                  ],
               ),
             ),
+                ),
             ),
             const SizedBox(
               height: 56,

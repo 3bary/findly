@@ -24,17 +24,6 @@ class _SignupFormState extends State<SignupForm> {
         key: formKey,
         child: Column(
           children: [
-            CustomTextFormField(
-              validator: (data) {
-                if (data!.isEmpty) {
-                  return 'field is required';
-                }
-                return null;
-              },
-              icon: FontAwesomeIcons.user,
-              hintText: 'Username',
-              obscureText: false,
-            ),
             const SizedBox(height: 24),
             CustomTextFormField(
               validator: (data) {
